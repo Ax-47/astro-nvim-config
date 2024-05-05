@@ -5,15 +5,18 @@ return {
 }, {
   "nvim-neorg/neorg",
   dependencies = { "luarocks.nvim" },
-  -- put any other flags you wanted to pass to lazy here!
+
   config = function()
     require("neorg").setup {
       load = {
         ["core.defaults"] = {},
         ["core.norg.concealer"] = {},
         ["core.latex.renderer"] = {},
+        ["core.ui"] = {},
         ["core.ui.calendar"] = {},
       },
     }
+    vim.wo.foldlevel = 99
+    vim.wo.conceallevel = 2
   end,
 }
