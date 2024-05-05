@@ -7,6 +7,10 @@ return {
   "AstroNvim/astrocommunity",
 
   { import = "astrocommunity.colorscheme.catppuccin" },
+  { import = "astrocommunity.editing-support.vim-move" },
+  { import = "astrocommunity.media.codesnap-nvim" },
+  { import = "astrocommunity.media.pets-nvim" },
+  { import = "astrocommunity.media.presence-nvim" },
   { import = "astrocommunity.pack.lua" },
   -- { import = "astrocommunity.pack.python" },
   -- { import = "astrocommunity.pack.go" },
@@ -14,8 +18,8 @@ return {
   -- { import = "astrocommunity.pack.html-css" },
   { import = "astrocommunity.pack.sql" },
   { import = "astrocommunity.pack.toml" },
-  { import = "astrocommunity.pack.tailwindcss" },
-  { import = "astrocommunity.pack.typescript" },
+  -- { import = "astrocommunity.pack.tailwindcss" },
+  -- { import = "astrocommunity.pack.typescript" },
   { import = "astrocommunity.pack.cpp" },
   { import = "astrocommunity.pack.docker" },
 }
