@@ -9,6 +9,7 @@ return {
   { import = "astrocommunity.colorscheme.catppuccin" },
   { import = "astrocommunity.editing-support.vim-move" },
   { import = "astrocommunity.media.codesnap-nvim" },
+  { import = "astrocommunity.media.cord-nvim" },
   -- { import = "astrocommunity.media.presence-nvim" },
   -- { import = "astrocommunity.media.pets-nvim" },
   { import = "astrocommunity.note-taking.venn-nvim" },
