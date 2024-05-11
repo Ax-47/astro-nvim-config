@@ -12,7 +12,7 @@ return {
   { import = "astrocommunity.syntax.vim-sandwich" },
   { import = "astrocommunity.media.codesnap-nvim" },
   { import = "astrocommunity.media.cord-nvim" },
-  -- { import = "astrocommunity.media.pets-nvim" },
+  { import = "astrocommunity.media.pets-nvim" },
   { import = "astrocommunity.note-taking.venn-nvim" },
   { import = "astrocommunity.note-taking.neorg" },
   { import = "astrocommunity.programming-language-support.web-tools-nvim" },
