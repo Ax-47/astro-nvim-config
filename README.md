@@ -24,11 +24,16 @@ You can also just clone this repository directly if you do not want to track you
 #### Clone the repository
 
 ```shell
-git clone https://github.com/<your_user>/<your_repository> ~/.config/nvim
+git clone https://github.com/Ax-47/astro-nvim-config ~/.config/nvim
 ```
 
 #### Start Neovim
-
+```fish
+#install package
+fucking pacman -S rust go clang gcc nodejs python lua 
+yay -S luajit
+cargo install tree-sitter-cli
+```
 ```shell
 nvim
 ```
