@@ -17,6 +17,8 @@ return {
   { import = "astrocommunity.note-taking.neorg" },
   { import = "astrocommunity.programming-language-support.web-tools-nvim" },
   { import = "astrocommunity.programming-language-support.rest-nvim" },
+  { import = "astrocommunity.editing-support.nvim-treesitter-context" },
+  { import = "astrocommunity.editing-support.nvim-treesitter-endwise" },
   { import = "astrocommunity.pack.blade" },
   { import = "astrocommunity.pack.bash" },
   { import = "astrocommunity.pack.lua" },
