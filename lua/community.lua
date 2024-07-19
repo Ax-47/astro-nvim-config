@@ -27,7 +27,7 @@ return {
   { import = "astrocommunity.pack.go" },
   { import = "astrocommunity.pack.fish" },
   { import = "astrocommunity.pack.html-css" },
-  { import = "astrocommunity.pack.sql" },
+  -- { import = "astrocommunity.pack.sql" },
   { import = "astrocommunity.pack.toml" },
   { import = "astrocommunity.pack.tailwindcss" },
   { import = "astrocommunity.pack.typescript" },
@@ -35,4 +35,5 @@ return {
   { import = "astrocommunity.pack.cpp" },
   { import = "astrocommunity.pack.cmake" },
   { import = "astrocommunity.pack.docker" },
+  -- { import = "astrocommunity.pack.prisma" },
 }
