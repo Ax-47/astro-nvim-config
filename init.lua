@@ -7,7 +7,7 @@ if not (vim.env.LAZY or (vim.uv or vim.loop).fs_stat(lazypath)) then
 end
 vim.opt.rtp:prepend(lazypath)
 -- norg setup
-
+vim.opt.termguicolors = true
 vim.wo.foldlevel = 99
 vim.wo.conceallevel = 2
 -- end
