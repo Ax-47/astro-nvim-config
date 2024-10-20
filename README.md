@@ -28,12 +28,14 @@ git clone https://github.com/Ax-47/astro-nvim-config ~/.config/nvim
 ```
 
 #### Start Neovim
+
 ```fish
 #install package
-fucking pacman -S rust go clang gcc nodejs python lua 
-yay -S luajit
+fucking pacman -S rust go clang gcc nodejs python lua
+yay -S luajit lazydocker
 cargo install tree-sitter-cli
 ```
+
 ```shell
 nvim
 ```
