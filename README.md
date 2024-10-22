@@ -31,7 +31,7 @@ git clone https://github.com/Ax-47/astro-nvim-config ~/.config/nvim
 
 ```fish
 #install package
-fucking pacman -S rust go clang gcc nodejs python lua
+fucking pacman -S rust go clang gcc nodejs python lua ripgrep
 yay -S luajit lazydocker
 cargo install tree-sitter-cli
 ```
