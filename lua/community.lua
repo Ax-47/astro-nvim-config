@@ -16,7 +16,8 @@ return {
   { import = "astrocommunity.editing-support.comment-box-nvim" },
   { import = "astrocommunity.editing-support.cloak-nvim" },
   -- { import = "astrocommunity.indent.indent-rainbowline" },
-  {import ="astrocommunity.motion.flash-nvim"},
+  { import = "astrocommunity.recipes.picker-nvchad-theme" },
+  { import = "astrocommunity.motion.flash-nvim" },
   { import = "astrocommunity.git.gitgraph-nvim" },
   { import = "astrocommunity.remote-development.nvim-sftp-sync" },
   { import = "astrocommunity.remote-development.remote-sshfs-nvim" },
@@ -59,4 +60,38 @@ return {
   { import = "astrocommunity.pack.cmake" },
   { import = "astrocommunity.pack.docker" },
   { import = "astrocommunity.pack.prisma" },
+  { import = "astrocommunity.pack.java" },
+  -- { import = "astrocommunity.lsp.nvim-java" },
+  {
+    "mfussenegger/nvim-jdtls",
+    opts = {
+      settings = {
+        java = {
+          configuration = {
+            runtimes = {
+              {
+                name = "JavaSE-11",
+                path = "/usr/lib/jvm/java-11-openjdk/",
+              },
+              {
+                name = "JavaSE-17",
+                path = "/usr/lib/jvm/java-17-openjdk/",
+              },
+              {
+                name = "JavaSE-21",
+                path = "/usr/lib/jvm/java-21-openjdk/",
+              },
+            },
+          },
+        },
+        format = {
+          enabled = true,
+          settings = {
+            url = "https://raw.githubusercontent.com/google/styleguide/gh-pages/eclipse-java-google-style.xml",
+            profile = "GoogleStyle",
+          },
+        },
+      },
+    },
+  },
 }
