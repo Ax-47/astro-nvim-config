@@ -61,7 +61,10 @@ return {
   { import = "astrocommunity.pack.docker" },
   { import = "astrocommunity.pack.prisma" },
   { import = "astrocommunity.pack.java" },
+
+  { import = "astrocommunity.pack.hyprlang" },
   -- { import = "astrocommunity.lsp.nvim-java" },
+  -- { import = "astrocommunity.recipes.picker-nvchad-theme" },
   {
     "mfussenegger/nvim-jdtls",
     opts = {
@@ -82,6 +85,35 @@ return {
                 path = "/usr/lib/jvm/java-21-openjdk/",
               },
             },
+          },
+
+          cleanup = {
+            actionsOnSave = {
+              "invertEquals",
+              "addOverride",
+              "addDeprecated",
+              -- "addFinalModifier",
+              -- "qualifyMembers",
+              -- "qualifyStaticMembers",
+              -- "stringConcatToTextBlock",
+              -- "instanceofPatternMatch",
+              -- "lambdaExpression",
+              -- "switchExpression",
+            },
+          },
+          codeGeneration = {
+            tostring = {
+              skipNullValues = true,
+              listArrayContents = true,
+              template = "${object.className}{${member.name()}=${member.value}, ${otherMembers}}",
+            },
+            useBlocks = true,
+            hashCodeEquals = {
+              useInstanceof = true,
+              useJava7Objects = true,
+            },
+            generateComments = false,
+            insertLocation = true,
           },
         },
         format = {
