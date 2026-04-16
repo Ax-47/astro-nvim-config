@@ -62,8 +62,13 @@ return {
   { import = "astrocommunity.pack.prisma" },
   { import = "astrocommunity.pack.java" },
 
+  { import = "astrocommunity.pack.cs-omnisharp" },
   { import = "astrocommunity.pack.hyprlang" },
-  -- { import = "astrocommunity.lsp.nvim-java" },
+  { import = "astrocommunity.lsp.dev-tools-nvim" },
+
+  { import = "astrocommunity.quickfix.quicker-nvim" },
+
+  { import = "astrocommunity.editing-support.refactoring-nvim" },
   -- { import = "astrocommunity.recipes.picker-nvchad-theme" },
   {
     "mfussenegger/nvim-jdtls",
