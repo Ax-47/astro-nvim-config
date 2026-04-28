@@ -1,5 +1,10 @@
-if true then return end -- WARN: REMOVE THIS LINE TO ACTIVATE THIS FILE
+-- ใช้ clipboard ร่วมกับระบบ
+vim.opt.clipboard:append "unnamedplus"
 
+-- ออกจาก terminal mode ด้วยปุ่ม Esc
+vim.api.nvim_set_keymap("t", "<Esc>", [[<C-\><C-n>]], { noremap = true, silent = true })
+
+vim.api.nvim_set_keymap("t", "jk", [[<C-\><C-n>]], { noremap = true, silent = true })
 -- This will run last in the setup process.
 -- This is just pure lua so anything that doesn't
 -- fit in the normal config locations above can go here
